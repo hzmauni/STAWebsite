@@ -21,14 +21,15 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6" style="padding: 20px;" >
+    <div class="col-md-6" style="padding: 20px;">
         <h2>If you are a student, you can...</h2>
         <p class="para" style="padding-right: 10px;">
-                -login <br/>
-                -enter your course details and get assigned to your specific teachers and courses <br/>
-                -browse teachers profiles and view their ratings <br/>
-                -rate your current course teachers on many different criteria  <br/>
+            -login <br />
+            -enter your course details and get assigned to your specific teachers and courses <br />
+            -browse teachers profiles and view their ratings <br />
+            -rate your current course teachers on many different criteria  <br />
         </p>
+        
         <p>
             <a class="btn btn-default" onclick="location.href='@Url.Action("Create", "Students")';return false;">Enter</a>
 
@@ -36,12 +37,16 @@
     </div>
     <div class="col-md-6" style="padding: 20px;">
         <h2>If you are a teacher, you can...</h2>
-        <p class="para" >
+        <p class="para">
             -login <br />
             -enter your course details and get assigned to your specific courses and students of said courses <br />
             -browse all teachers profiles and view their ratings <br />
             -rate your current class of students on many different criteria
         </p>
-       
+        
+        <p>
+            <a class="btn btn-default" onclick="location.href='@Url.Action("Create", "Instructors")';return false;">Enter</a>
+
+        </p>
     </div>
 </div>
