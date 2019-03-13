@@ -1,6 +1,10 @@
 ﻿@model STAWebsite.Models.Instructor
 
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
     ViewBag.Title = "Edit";
 }
 
@@ -10,7 +14,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Instructor</h4>
         <hr />
