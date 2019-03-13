@@ -12,7 +12,11 @@ namespace STAWebsite.Models
     {
         [Key]
         public int instructor_id { get; set; }
+        [Required(ErrorMessage = "*Enter valid name")]
+        [Display(Name = "Teacher Name")]
         public string instructor_name { get; set; }
+        [Required(ErrorMessage = "*Enter valid password")]
+        [DataType(DataType.Password)]
         public string instructor_password { get; set; }
         public int i_courses { get; set; }
         public float i_avg_rating { get; set; }
